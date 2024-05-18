@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding-top: 70px; /* Add top padding to prevent content being hidden behind the fixed header */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header is above other content */
+        }
+
+        /* Cart button styles */
+        .cart-btn {
+            position: absolute;
+            top: 50%;
+            right: 100px;
+            transform: translateY(-50%);
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 4px;
+            font-size: 12px;
+        }
+
+        /* Featured products styles */
+        .featured-products {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #f7f7f7;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: skyblue; /* Set product name color to sky blue */
+            cursor: pointer; /* Change cursor to pointer to indicate clickability */
+        }
+
+        .product-name:hover {
+            color: blue; /* Change product name color on hover */
+        }
+
+        .product p {
+            margin: 0;
+            font-size: 14px;
+            color: skyblue; /* Set product price color to sky blue */
+        }
+
+        .product a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ</h1>
+        <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+    </header>
+
+    <section class="featured-products">
+        <div class="product">
+            <a href="product1.html">
+                <img src="product1.jpg" alt="Rolex Gold Daytona Watch For Men Rl-33">
+                <h3 class="product-name" data-link="product1.html">Rolex Gold Daytona Watch For Men Rl-33</h3>
+                <p>$600000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product2.html">
+                <img src="https://goodsdream.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-27-at-5.54.19-PM-1152x1536.jpeg" alt="Rolex oyester red & black (limited edition)">
+                <h3 class="product-name" data-link="product2.html">Rolex oyester red & black (limited edition)</h3>
+                <p>$400000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product3.html">
+                <img src="product3.jpg" alt="Rolex Watches for Men With Smaller Wrists">
+                <h3 class="product-name" data-link="product3.html">Rolex Watches for Men With Smaller Wrists</h3>
+                <p>$800000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product4.html">
+                <img src="https://www.watchesandcrystals.com/cdn/shop/articles/5-most-prestigious-jacob-and-co-luxury-watches-364754.jpg?v=1659676077" alt="Jacob & co luxury watch">
+                <h3 class="product-name" data-link="product4.html">Jacob & co luxury watch</h3>
+                <p>$100000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product5.html">
+                <img src="https://media.rolex.com/image/upload/v1708437802/rolexcom/navigation/watches-navigation/rolex-watches-navigation-day-date_m228236-0012_2210jva_001-portrait.jpg" alt="Rolex ICE blue mens watch(limited edition)">
+                <h3 class="product-name" data-link="product5.html">Rolex ICE blue mens watch(limited edition)</h3>
+                <p>$100000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product6.html">
+                <img src="https://www.carlington.in/cdn/shop/files/Carlington_elite_analog_ladies_watch_CT_2007_roseblack.jpg?v=1696689556&width=2400" alt="Carlington women watch">
+                <h3 class="product-name" data-link="product6.html">Carlington women watch</h3>
+                <p>$2400.99</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product7.html">
+                <img src="https://i.pinimg.com/originals/ef/e1/cb/efe1cb69a744c14b16fec25a93074bc6.jpg" alt="ROLEX MEN WHITE GOLD WATCH">
+                <h3 class="product-name" data-link="product7.html">ROLEX MEN WHITE GOLD WATCH</h3>
+                <p>$100000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product8.html">
+                <img src="https://vid.alarabiya.net/images/2023/04/10/3e3b60ff-4ffb-4a56-8cd6-df1cc5f00b09/3e3b60ff-4ffb-4a56-8cd6-df1cc5f00b09.jpg?crop=4:3&width=1200.jpg" alt="PATEK PHILIPPE">
+                <h3 class="product-name" data-link="product8.html">PATEK PHILIPPE</h3>
+                <p>$10000000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product9.html">
+                <img src="https://timeandtidewatches.com/wp-content/uploads/2022/10/Untitled-1-5.jpg.webp" alt="HUBLOT WHITE GOLD WATCH">
+                <h3 class="product-name" data-link="product9.html">HUBLOT WHITE GOLD WATCH</h3>
+                <p>$10000000</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product10.html">
+                <img src="https://www.ethoswatches.com/the-watch-guide/wp-content/uploads/2023/06/Bugatti-Chiron-Tourbillon-featured@2x.jpg" alt="JACOB & CO BUGATTI WATCH">
+                <h3 class="product-name" data-link="product10.html">JACOB & CO BUGATTI WATCH</h3>
+                <p>$100000000</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script>
+        let cartCount = 0;
+
+        document.querySelector('.cart-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Implement functionality to handle clicking on the cart button here
+        });
+
+        function addToCart() {
+            cartCount++;
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const cartCountElement = document.querySelector('.cart-count');
+            cartCountElement.textContent = cartCount;
+        }
+
+        // Add event listeners to all product names
+        document.querySelectorAll('.product-name').forEach(function(name) {
+            name.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                const link = name.getAttribute('data-link');
+                window.location.href = link; // Navigate to the product page
+            });
+        });
+    </script>
+</body>
+</html>

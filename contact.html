@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IK Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .left-buttons, .right-buttons {
+            display: flex;
+        }
+
+        .button {
+            margin: 0 10px;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            padding-top: 100px;
+            box-sizing: border-box;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .contact-section {
+            padding: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 10px;
+            color: red; /* Change label color to red */
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ</h1>
+    </div>
+    <div class="button-container">
+        <div class="left-buttons">
+            <button class="button" onclick="redirectTo('home')">Home</button>
+            <button class="button" onclick="redirectTo('products')">Products</button>
+        </div>
+        <div class="right-buttons">
+            <button class="button" onclick="redirectTo('login')">Login</button>
+            <button class="button" onclick="redirectTo('signup')">Sign Up</button>
+            <button class="button" onclick="redirectTo('contact')">Contact</button>
+            <button class="button" onclick="redirectTo('about')">About</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page + '.html';
+        }
+    </script>
+</body>
+</html>

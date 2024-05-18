@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IK Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .left-buttons, .right-buttons {
+            display: flex;
+        }
+
+        .button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #444;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            padding-top: 100px;
+            box-sizing: border-box;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        h2, p {
+            color: red;
+        }
+
+        .about-section {
+            padding: 20px;
+        }
+
+        .history, .team, .values {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .history img, .team img, .values img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            flex: 1 1 30%;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ</h1>
+    </div>
+    <div class="button-container">
+        <div class="left-buttons">
+            <button class="button" onclick="redirectTo('home')">Home</button>
+            <button class="button" onclick="redirectTo('products')">Products</button>
+        </div>
+        <div class="right-buttons">
+            <button class="button" onclick="redirectTo('login')">Login</button>
+            <button class="button" onclick="redirectTo('signup')">Sign Up</button>
+            <button class="button" onclick="redirectTo('contact')">Contact</button>
+            <button class="button" onclick="redirectTo('about')">About</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="about-section">
+            <h2>About Us</h2>
+            <div class="history">
+                <h3>Our History</h3>
+                <img src="https://images.livemint.com/r/LiveMint/Period1/2013/07/26/Photos/09_History_Rolex.jpg" alt="Our History">
+                <p>IK Collection was founded with a passion for horology and a commitment to excellence. Over the years, we have grown into a renowned name in the watch industry, known for our impeccable designs and superior quality.</p>
+            </div>
+
+           
+
+            <div class="values">
+                <h3>Our Values</h3>
+                <img src="https://www.shutterstock.com/image-vector/company-core-values-round-icon-600nw-1785384563.jpg" alt="Our Values">
+                <p>At IK Collection, we believe in integrity, innovation, and customer satisfaction. Our values drive everything we do, from the design process to customer service, ensuring that each watch we create is a masterpiece.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page + '.html';
+        }
+    </script>
+</body>
+</html>

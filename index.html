@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .left-buttons, .right-buttons {
+            display: flex;
+        }
+
+        .button {
+            margin: 0 10px;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            padding-top: 100px; /* Adjust according to header height */
+            box-sizing: border-box;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        }
+
+        .content::-webkit-scrollbar {
+            display: none; /* Hide scrollbar */
+        }
+
+        /* Other styles */
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        h2, .offer p, .product-card h3, .product-card p {
+            color: rgb(255, 255, 255); /* Change text color to red */
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .offer {
+            border: 1px solid #f00;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɪᴋ ᴄᴏʟʟᴇᴄᴛɪᴏɴ</h1>
+    </div>
+    <div class="button-container">
+        <div class="left-buttons">
+            <button class="button" onclick="redirectTo('home')">Home</button>
+            <button class="button" onclick="redirectTo('products')">Products</button>
+        </div>
+        <div class="right-buttons">
+            <button class="button" onclick="redirectTo('login')">Login</button>
+            <button class="button" onclick="redirectTo('signup')">Sign Up</button>
+            <button class="button" onclick="redirectTo('contact')">Contact</button>
+            <button class="button" onclick="redirectTo('about')">About</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Latest Launch</h2>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/ef/e1/cb/efe1cb69a744c14b16fec25a93074bc6.jpg" alt="Latest Launch">
+            <h3>ROLEX MEN WHITE GOLD WATCH</h3>
+            <p>Rolex white gold watch is customized with pure white gold with high quality and durability.</p>
+            <button class="button">Add to Cart</button>
+            <button class="button">Buy Now</button>
+        </div>
+
+        <h2>Special Offer</h2>
+        <div class="offer">
+            <p>Enjoy 20% off on all items this week! Use code: SPECIAL20</p>
+        </div>
+
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="product1.jpg" alt="Featured Product 1">
+            <h3>Rolex Gold Daytona Watch For Men Rl-33</h3>
+            <p>New arrival of Rolex Daytona Gold Watches Rl 33 Online India. We offer this Rolex Daytona Wrist Watches at the lowest price . This is a golden chain strap Rolex Chronograph Men’s Watch. Stone studded dial with Roman Numeral specification give this Rolex Wrist Watch the most authentic look. This is a perfect Rolex Wrist Watch For Men that everyone should have in their collections. This Rolex Gold Watch can also be use as a perfect gift to give your close ones.</p>
+            <button class="button">Add to Cart</button>
+            <button class="button">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Featured Product 2">
+            <h3>Rolex oyester red & black (limited edition)</h3>
+            <p>Rolex is well known for it's quality & desings.this is an rolex limited edition watch.oyester is the highly demand watch in rolex.and the colour combo of red & black makes the watch more attractive.</p>
+            <button class="button">Add to Cart</button>
+            <button class="button">Buy Now</button>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            if (page === 'login') {
+                window.location.href = 'login.html';
+            } else if (page === 'signup') {
+                window.location.href = 'signup.html';
+            } else if (page === 'about') {
+                window.location.href = 'about.html';
+            } else if (page === 'contact') {
+                window.location.href = 'contact.html';
+            } else if (page === 'products') {
+                window.location.href = 'products.html';
+            } else if (page === 'home') {
+                window.location.href = 'home.html';
+            }
+        }
+    </script>
+</body>
+</html>

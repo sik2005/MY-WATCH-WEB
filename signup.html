@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
+</head>
+<body class="signup-bg">
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" onsubmit="return signup()">
+            <input type="text" id="newUsername" placeholder="Username" required><br>
+            <input type="password" id="newPassword" placeholder="Password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        function signup() {
+            var newUsername = document.getElementById("newUsername").value;
+            var newPassword = document.getElementById("newPassword").value;
+            // Add your signup logic here
+            // For demonstration, just redirect to index.html after successful signup
+            window.location.href = "index.html";
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>
